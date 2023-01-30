@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DevFreela.Core.Repositories
 {
-    pubic interface IProjectRepository
+    public interface IProjectRepository
     {
     }
 }

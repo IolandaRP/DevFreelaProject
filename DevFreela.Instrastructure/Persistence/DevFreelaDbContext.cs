@@ -25,7 +25,7 @@ namespace DevFreela.Instrastructure.Persistence
                 new User("Luis Felipe", "luisFelipe@gmail.com", new DateTime(1992,1,1))
             };
 
-            Skils = new List<Skill>
+            Skills = new List<Skill>
             {
                 new Skill("C#"),
                 new Skill("ASPNET Core"),
@@ -43,7 +43,7 @@ namespace DevFreela.Instrastructure.Persistence
 
         public List<Project> Projects { get; set; }
         public List<User> Users { get; set; }
-        public List<Skill> Skils { get; set; }
+        public List<Skill> Skills { get; set; }
         public List<ProjectComments> Comments { get; set; }
     }
 }

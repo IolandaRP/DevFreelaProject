@@ -36,11 +36,14 @@ namespace DevFreela.Instrastructure.Persistence
                 new Skill("React"),
                 new Skill("Angular")
             };
+
+            Comments = new List<ProjectComments>();
             
         }
 
         public List<Project> Projects { get; set; }
         public List<User> Users { get; set; }
         public List<Skill> Skils { get; set; }
+        public List<ProjectComments> Comments { get; set; }
     }
 }

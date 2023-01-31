@@ -4,7 +4,8 @@
 
 <p align="center">
   <a href="#interrobang">Dev Freela</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rocket-tecnologias">Tecnologias usadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-tecnologias">Tecnologias usadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp
+  <a href="#key-status">Status do Projeto</a>
   <a href="#key-licença">Licença</a>
 </p>
 
@@ -24,6 +25,9 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - ASP.NET Core
 - C#
 - Swagger
+
+## 📍 Status do Projeto: 
+Projeto em desenvolvimento.
 
 ## :key: Licença:
 

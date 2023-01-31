@@ -13,7 +13,7 @@
 
 ## :interrobang: O que é o Dev Freela? **(Em desenvolvimento)**
 
-Dev Freela é uma plataforma para cadastro e contratação de serviços de freelance de desenvolvedores.
+Dev Freela é uma plataforma para cadastro e contratação de serviços de freelancer de desenvolvedores.
 Projeto desenvolvido na Formação ASP.NET Core do Método .Net Direto ao Ponto de Luis Dev.
 
 ## :rocket: Tecnologias: **(Em desenvolvimento)**

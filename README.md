@@ -5,19 +5,19 @@
 <p align="center">
   <a href="#interrobang">Dev Freela</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-tecnologias">Tecnologias usadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp
-  <a href="#key-status">Status do Projeto</a>
+  <a href="#key-status">Status do Projeto</a>&nbsp;&nbsp;&nbsp;|
   <a href="#key-licença">Licença</a>
 </p>
 
 <br>
 <br>
 
-## :interrobang: O que é o Dev Freela? **(Em desenvolvimento)**
+## :interrobang: O que é o Dev Freela? 
 
 Dev Freela é uma plataforma para cadastro de projetos e contratação de serviços de freelancer de desenvolvedores para desenvolver tais projetos.
 Projeto desenvolvido na Formação ASP.NET Core do Método .Net Direto ao Ponto de Luis Dev.
 
-## :rocket: Tecnologias: **(Em desenvolvimento)**
+## :rocket: Tecnologias: 
 
 Este projeto foi desenvolvido com as seguintes tecnologias:
 
@@ -25,6 +25,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - ASP.NET Core
 - C#
 - Swagger
+- Sql Server
 
 ## 📍 Status do Projeto: 
 Projeto em desenvolvimento.

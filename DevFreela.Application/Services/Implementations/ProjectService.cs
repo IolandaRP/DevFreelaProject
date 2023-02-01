@@ -18,9 +18,9 @@ namespace DevFreela.Application.Services.Implementations
         { 
             _dbContext = dbContext;
         }
-        public void CreateComment(int id, NewCommentInputModel inputModel)
+        public void CreateComment(NewCommentInputModel inputModel)
         {
-            var project = _dbContext.Projects.SingleOrDefault(p => p.Id== id);
+            var project = _dbContext.Projects.SingleOrDefault(p => p.Id== inputModel.IdProject);
 
             if (project != null) 
             {
@@ -73,6 +73,11 @@ namespace DevFreela.Application.Services.Implementations
         public ProjectDetailsViewModel GetById(int id)
         {
             var project = _dbContext.Projects.SingleOrDefault(p => p.Id == id);
+
+            if (project == null)
+            {
+                return null;
+            }
 
             var projectDetailsViewModel = new ProjectDetailsViewModel(
                 project.Id,

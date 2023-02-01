@@ -14,7 +14,7 @@ namespace DevFreela.Application.Services.Interfaces
         ProjectDetailsViewModel GetById(int id);
         int CreateProject(NewProjectInputModel inputModel);
         void UpdateProject(UpdateProjectInputModel inputModel);
-        void CreateComment(int id, NewCommentInputModel inputModel);
+        void CreateComment(NewCommentInputModel inputModel);
         void Delete(int id);
         void Start(int id);
         void Finish(int id);

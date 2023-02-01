@@ -13,9 +13,9 @@ namespace DevFreela.API.Controllers
 
         public IActionResult Get() 
         {
-            var skillViewModel = _skillService.GetAll();
+            var skills = _skillService.GetAll();
 
-            return Ok(skillViewModel);
+            return Ok(skills);
         }
     }
 }

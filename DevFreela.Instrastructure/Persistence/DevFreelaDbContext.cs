@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,50 +24,9 @@ namespace DevFreela.Instrastructure.Persistence
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Project>()
-                .HasKey(p => p.Id);
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
-            modelBuilder.Entity<Project>()
-                .HasOne(p => p.Freelancer)
-                .WithMany(f => f.FreelanceProjects)
-                .HasForeignKey(p => p.IdFreelancer)
-                .OnDelete(DeleteBehavior.Restrict);
-
-            modelBuilder.Entity<Project>()
-               .HasOne(p => p.Client)
-               .WithMany(c => c.OwnedProjects)
-               .HasForeignKey(p => p.IdClient)
-               .OnDelete(DeleteBehavior.Restrict);
-
-            modelBuilder.Entity<ProjectComments>()
-               .HasKey(p => p.Id);
-
-            modelBuilder.Entity<ProjectComments>()
-              .HasOne(p => p.Project)
-              .WithMany(p => p.Comments)
-              .HasForeignKey(p => p.IdProject)
-              .OnDelete(DeleteBehavior.Restrict);
-
-            modelBuilder.Entity<ProjectComments>()
-             .HasOne(p => p.User)
-             .WithMany(u => u.Comments)
-             .HasForeignKey(p => p.IdUser)
-             .OnDelete(DeleteBehavior.Restrict);
-
-            modelBuilder.Entity<User>()
-                .HasKey(u => u.Id);
-
-            modelBuilder.Entity<User>()
-              .HasMany(u => u.Skills)
-              .WithOne()
-              .HasForeignKey(p => p.IdSkill)
-              .OnDelete(DeleteBehavior.Restrict);
-
-            modelBuilder.Entity<Skill>()
-              .HasKey(p => p.Id);
-
-            modelBuilder.Entity<UserSkill>()
-              .HasKey(p => p.Id);
+            //pega todas as classes do assembly que implementam a interface IEntityTypeConfiguration e aplica a configuração
         }
     }
 }

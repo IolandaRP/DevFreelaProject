@@ -26,7 +26,7 @@ namespace DevFreela.Instrastructure.Persistence
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
-            //pega todas as classes do assembly que implementam a interface IEntityTypeConfiguration e aplica a configuração
+            //pega o assembly onde esse código é executado e add todas as configurations que implementam a interface IEntityTypeConfiguration
         }
     }
 }

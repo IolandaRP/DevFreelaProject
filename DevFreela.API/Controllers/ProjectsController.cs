@@ -57,9 +57,15 @@ namespace DevFreela.API.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] CreateProjectCommand command)
         {
-            if(command.Title.Length > 50)
+
+            if (!ModelState.IsValid)
             {
-                return BadRequest();
+                var messages = ModelState
+                    .SelectMany(ms => ms.Value.Errors)
+                    .Select(e => e.ErrorMessage)
+                    .ToList();
+
+                return BadRequest(messages);
             }
 
             var id = _mediator.Send(command);

@@ -25,5 +25,15 @@ namespace DevFreela.Instrastructure.Persistence.Repositories
 
             return user;
         }
+
+        public async Task AddAsync(User user)
+        {
+            await _dbContext.Users.AddAsync(user);
+        }
+
+        public async Task SaveChangesAsync()
+        {
+            await _dbContext.SaveChangesAsync();
+        }
     }
 }

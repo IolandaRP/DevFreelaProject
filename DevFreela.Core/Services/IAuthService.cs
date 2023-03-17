@@ -8,7 +8,8 @@ namespace DevFreela.Core.Services
 {
     public interface IAuthService
     {
-        string GenerateJewToken(string email, string role);
-        //role representa o papel do usuário: cliente ou freelancer
+        string GenerateJwtToken(string email, string role); //role representa o papel do usuário: cliente ou freelancer
+
+        string ComputeSha256Hash(string password);
     }
 }
